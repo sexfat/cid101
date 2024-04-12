@@ -1,5 +1,5 @@
 body {
-  background-color: #f20;
+  background-color: rgb(238, 238, 238);
   font-size: 20px;
   margin: 0;
   padding: 0; 
@@ -17,6 +17,7 @@ nav {
 
 nav ul {
   display: flex;
+  list-style: none;
 }
 
 nav ul li {
@@ -24,7 +25,9 @@ nav ul li {
     text-align: center;
     padding: 10px 8px;
     cursor: pointer;
-     margin:  0 10px;    
+     margin:  0 10px;   
+     background-color: #e30707; 
+     color: #fff;
 
 
 }
