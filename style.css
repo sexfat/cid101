@@ -4,3 +4,27 @@ body {
   margin: 0;
   padding: 0; 
 }
+
+.wrapper {
+  width: 100%;
+  
+}
+
+nav {
+   width: 920px;
+   margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+    width: 150px;
+    text-align: center;
+    padding: 10px 8px;
+    cursor: pointer;
+     margin:  0 10px;    
+
+
+}
