@@ -90,4 +90,19 @@ footer {
   margin: 0 auto;
 }
 
+.f {
+  width: 33%;
+}
+
+.c {
+  background-color: white;
+}
+
+a {
+  background-color: #00aaff;
+}
+a:hover {
+  background-color: #0088cc;
+}
+
 /*# sourceMappingURL=style.css.map */

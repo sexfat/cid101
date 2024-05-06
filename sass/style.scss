@@ -66,10 +66,30 @@ $themeLayout : 1200;
         width: $themeLayout + px;
         margin: 0 auto;
     }
+}
 
 
+//運算函式 round/ floor /ciel
+.f {
+  width: round((4/12) * 100% ) ;
+}
 
-
-
+// 顏色函式
+.c {
+//   background-color: darken(#fff , 100);
+  background-color: lighten(#000 , 100);
 
 }
+
+$alink : #00aaff;
+
+
+
+a {
+ background-color: $alink;
+ &:hover {
+    background-color: darken($alink  , 10);
+ }
+}
+
+
