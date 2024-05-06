@@ -109,7 +109,8 @@ h3 {
     margin-bottom: 10px;
 }
 .btn-sm {
-  @include btn( 140px,  #fff , #0011ff , 20px)
+  @include btn( 90%,  #fff , #ff00c8);
+  padding: 10px  14px;
 }
 
 .btn-default {
@@ -118,6 +119,4 @@ h3 {
 
 .btn-xl {
     @include btn(240px, #333)
-
-
 }
