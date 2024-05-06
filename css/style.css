@@ -69,4 +69,15 @@ footer {
   content: "關於我們";
 }
 
+.w {
+  width: 30em;
+  height: -280px;
+  margin: 100px;
+  font: 5px;
+}
+
+.bgcolor {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */

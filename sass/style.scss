@@ -12,3 +12,30 @@
 
 
 
+//運算  單位要注意 // 除式要()
+
+.w {
+  width: 10 + 20em;
+  height: 20px - 300 ;
+  margin:  10 * 10 + px; //單位
+  font: (100 / 20) + px ;
+}
+
+$bgc : blue;
+
+.bgcolor {
+  @if $bgc == light {
+    background-color: #fff;
+  }@else if $bgc == dark {
+    background-color:#000;
+  }@else {
+     background-color: $bgc;
+  }
+}
+
+
+
+
+
+
+
