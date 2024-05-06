@@ -85,4 +85,9 @@ footer {
   line-height: 30px;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */
