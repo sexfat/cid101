@@ -4,6 +4,9 @@
 @import 'base/var';
 @import 'base/setting';
 
+// mixin 
+@import 'mixin/mixins';
+
 //layout
 @import 'layout/header';
 @import 'layout/footer';
@@ -55,19 +58,7 @@ $device-w : 400;
 }
 
 
-@mixin layout($themeLayout){
-    @if $themeLayout ==100 {
-        width: 100%;
-    }
-    @else if $themeLayout < 100 {
-        width: $themeLayout * 1%;
-        margin: 0 auto;
-    }
-    @else {
-        width: $themeLayout + px;
-        margin: 0 auto;
-    }
-}
+
 .wrapper {
   @include layout(70);
 }
@@ -85,25 +76,7 @@ $device-w : 400;
 
 }
 
-$alink : #00aaff;
 
-
-// a {
-//     background-color: $alink;
-
-//     &:hover {
-//         background-color: darken($alink , 10);
-//     }
-// }
-
-//  function name
-
-@mixin basetitle($fontSize: 18px , $color:null) {
-    font-size: $fontSize;
-    line-height: 1.4;
-    font-weight: bold;
-    color : $color;
-}
 
 .title {
     @include basetitle(24px , #bafd6d);
@@ -116,5 +89,5 @@ p {
 }
 
 h3 {
- @include basetitle(46px , #cccccc);
+ @include basetitle(52px , #cccccc);
 }
