@@ -1,4 +1,6 @@
 //變數
+@use 'sass:math';
+
 @import 'base/var';
 @import 'base/setting';
 
@@ -12,13 +14,13 @@
 
 
 
-//運算  單位要注意 // 除式要()
+//運算  單位要注意 // 除式要 math.div(分子 , 分母 )
 
 .w {
     width: 10 + 20em;
     height: 20px - 300;
     margin: 10 * 10 + px; //單位
-    font: (100 / 20) + px;
+    font: math.div(100, 20) + px;
 }
 
 $bgc : blue;
@@ -52,6 +54,7 @@ $device-w : 400;
 }
 
 $themeLayout : 1200;
+
 .wrapper {
     @if $themeLayout ==100 {
         width: 100%;
@@ -71,25 +74,23 @@ $themeLayout : 1200;
 
 //運算函式 round/ floor /ciel
 .f {
-  width: round((4/12) * 100% ) ;
+    width: round(math.div(4, 12) * 100%);
 }
 
 // 顏色函式
 .c {
-//   background-color: darken(#fff , 100);
-  background-color: lighten(#000 , 100);
+    //   background-color: darken(#fff , 100);
+    background-color: lighten(#000, 100);
 
 }
 
 $alink : #00aaff;
 
 
-
 a {
- background-color: $alink;
- &:hover {
-    background-color: darken($alink  , 10);
- }
+    background-color: $alink;
+
+    &:hover {
+        background-color: darken($alink , 10);
+    }
 }
-
-
