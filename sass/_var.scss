@@ -1,0 +1,18 @@
+/*css註解*/
+
+$fontSize: 16px; // 數字 註解
+$color : #333; //顏色
+$margin : 10px auto;
+$bgc : #fff9c7; //背景
+$gray-1 : #e5e5e5;
+$gray-2 : #cccccc;
+
+$layout-fixed : 1366px;
+$layout-full : 100%;
+
+$d : 300;
+$d : 150 !default;
+
+.spacing-1 {
+    left: $d
+}

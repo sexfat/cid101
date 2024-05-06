@@ -1,91 +1,14 @@
-/*css註解*/
+//變數
+@import 'sass/var';
+@import 'sass/setting';
 
-$fontSize: 16px; // 數字 註解
-$color : #333; //顏色
-$margin : 10px auto;
-$bgc : #fff9c7; //背景
-$gray-1 : #e5e5e5;
-$gray-2 : #cccccc;
+//layout
+@import 'sass/header';
+@import 'sass/footer';
 
-$layout-fixed : 1366px;
-$layout-full : 100%;
+//page
+@import 'sass/index';
+@import 'sass/about';
 
 
-body {
-    //$a : 20 !global; 新版的sass不支援 區域變數轉全域，但可以執行，我們比較少用  
-    padding: 0;
-    margin: $margin;
-    font-size: $fontSize;
-    background-color: $bgc;
-    color: $color;
-}
 
-$d : 300;
-$d : 150 !default;
-
-.spacing-1 {
-    left: $d
-}
-
-//header 
-
-.wrapper {
-    .row {
-        header {
-            display: flex;
-            background-color: #eeeeee;
-            flex-direction: row;
-            align-content: space-around;
-            align-items: center;
-
-            .logo {
-                width: 80px;
-                height: 80px;
-                background-color: #858585;
-            }
-
-            nav {
-                ul {
-                    list-style: none;
-                    display: flex;
-
-                    li {
-                        width: 120px;
-                        margin: 0 10px;
-                        background-color: #d6d6d6;
-                        a {
-                           display: block;
-                           text-decoration: none;
-                           background-color: #fac660;
-                           color: #333;
-                           transition: .3s all ease;
-                           
-                           &:hover {
-                               background-color: #bafd6d;
-                               padding-left: 5px;
-                           }
-                           &::before {
-                            content: ' + ';
-                           }
-                        }
-                    }
-                }
-            }
-        }
-        .container{
-        //內容
-          max-width: $layout-fixed;
-          margin: 0 auto;
-          min-height: 300px;
-          background-color: $gray-1;
-        }
-        footer {
-        //footer
-        width: $layout-full;
-        background-color:$gray-2;
-        min-height: 400px;
-        }
-
-    }
-
-}
