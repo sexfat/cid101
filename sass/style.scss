@@ -91,7 +91,7 @@ h3 {
 
 
 
-@mixin btn($w , $color , $bgc:null){
+@mixin btn($w , $color , $bgc:null , $borderRadius:null){
     width: $w;
     color: $color;
     font-size: 16px;
@@ -100,17 +100,20 @@ h3 {
     }
     padding: 5px 10px;
     text-align: center;
-    border-radius: 5px;
+    @if $borderRadius != null {
+        border-radius: $borderRadius;
+    } 
+   
     background-color: $bgc;
     cursor: pointer;
     margin-bottom: 10px;
 }
 .btn-sm {
-  @include btn( 140px,  #fff , #0011ff )
+  @include btn( 140px,  #fff , #0011ff , 20px)
 }
 
 .btn-default {
-    @include btn( 180px, #333)
+    @include btn( 180px, #333 , null , 10px)
   }
 
 .btn-xl {
