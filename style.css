@@ -1,31 +1,34 @@
+@charset "UTF-8";
+/*css註解*/
 body {
-  background-color: rgb(238, 238, 238);
-  font-size: 20px;
-  margin: 0;
-  padding: 0; 
+  padding: 0;
+  margin: 10px auto;
+  font-size: 16px;
+  background-color: #fff9c7;
+  color: #333;
 }
 
-.wrapper {
-  width: 100%;
-  
+.spacing-1 {
+  left: 300;
 }
 
-nav {
-   width: 920px;
-   margin: 0 auto;
-}
-
-nav ul {
+.wrapper .row header {
   display: flex;
+  background-color: #eeeeee;
+}
+.wrapper .row header .logo {
+  width: 80px;
+  height: 80px;
+  background-color: #858585;
+}
+.wrapper .row header nav ul {
   list-style: none;
+  display: flex;
+}
+.wrapper .row header nav ul li {
+  width: 120px;
+  margin: 0 10px;
+  background-color: #d6d6d6;
 }
 
-nav ul li {
-    width: 150px;
-    text-align: center;
-    padding: 10px 8px;
-    cursor: pointer;
-     margin:  0 10px;   
-     background-color: #e30707; 
-     color: #fff;
-}
+/*# sourceMappingURL=style.css.map */
