@@ -12,6 +12,13 @@ body {
   color: #333;
 }
 
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  min-height: 300px;
+  background-color: #e5e5e5;
+}
+
 header {
   display: flex;
   background-color: #eeeeee;
@@ -54,11 +61,12 @@ footer {
   min-height: 400px;
 }
 
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
-  min-height: 300px;
-  background-color: #e5e5e5;
+.index h2::before {
+  content: "首頁";
+}
+
+.about h2::before {
+  content: "關於我們";
 }
 
 /*# sourceMappingURL=style.css.map */

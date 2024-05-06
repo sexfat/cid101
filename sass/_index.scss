@@ -1,7 +1,8 @@
-.container{
-    //內容
-      max-width: $layout-fixed;
-      margin: 0 auto;
-      min-height: 300px;
-      background-color: $gray-1;
-    }
+.index {
+  //首頁內容
+  h2 {
+    &::before {
+     content: '首頁';
+    } 
+  }
+}

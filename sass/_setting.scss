@@ -6,3 +6,11 @@ body {
     background-color: $bgc;
     color: $color;
 }
+
+.container{
+    //內容
+      max-width: $layout-fixed;
+      margin: 0 auto;
+      min-height: 300px;
+      background-color: $gray-1;
+    }
