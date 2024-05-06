@@ -76,8 +76,6 @@ $device-w : 400;
 
 }
 
-
-
 .title {
     @include basetitle(24px , #bafd6d);
    
@@ -85,7 +83,6 @@ $device-w : 400;
 
 p {
   @include basetitle(18px , #de2);
-  
 }
 
 h3 {
