@@ -19,3 +19,20 @@
     color : $color;
 }
 
+// btn
+@mixin btn($w , $color , $bgc:null , $borderRadius:null){
+    width: $w;
+    color: $color;
+    font-size: 16px;
+    @if $bgc == null{
+        border: 1px solid $color; 
+    }
+    padding: 5px 10px;
+    text-align: center;
+    @if $borderRadius != null {
+        border-radius: $borderRadius;
+    } 
+    background-color: $bgc;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
