@@ -94,3 +94,26 @@ a {
         background-color: darken($alink , 10);
     }
 }
+
+//  function name
+
+@mixin basetitle($fontSize , $color) {
+    font-size: $fontSize;
+    line-height: 1.4;
+    font-weight: bold;
+    color : $color;
+}
+
+.title {
+    @include basetitle(24px , #333);
+   
+}
+
+p {
+  @include basetitle(18px , #de2);
+  
+}
+
+h3 {
+ @include basetitle(46px , #cccccc);
+}

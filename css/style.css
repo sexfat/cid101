@@ -105,4 +105,25 @@ a:hover {
   background-color: #0088cc;
 }
 
+.title {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #de2;
+}
+
+h3 {
+  font-size: 46px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #cccccc;
+}
+
 /*# sourceMappingURL=style.css.map */
