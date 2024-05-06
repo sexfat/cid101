@@ -15,6 +15,9 @@ body {
 .wrapper .row header {
   display: flex;
   background-color: #eeeeee;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
 }
 .wrapper .row header .logo {
   width: 80px;
@@ -41,6 +44,17 @@ body {
 }
 .wrapper .row header nav ul li a::before {
   content: " + ";
+}
+.wrapper .row .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 300px;
+  background-color: #e5e5e5;
+}
+.wrapper .row footer {
+  width: 100%;
+  background-color: #cccccc;
+  min-height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
