@@ -47,6 +47,18 @@ $d : 150 !default;
                         width: 120px;
                         margin: 0 10px;
                         background-color: #d6d6d6;
+                        a {
+                           display: block;
+                           text-decoration: none;
+                           background-color: #fac660;
+                           color: #333;
+                           &:hover {
+                               background-color: #bafd6d;
+                           }
+                           &::before {
+                            content: ' + ';
+                           }
+                        }
                     }
                 }
             }

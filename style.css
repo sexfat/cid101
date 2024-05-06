@@ -30,5 +30,17 @@ body {
   margin: 0 10px;
   background-color: #d6d6d6;
 }
+.wrapper .row header nav ul li a {
+  display: block;
+  text-decoration: none;
+  background-color: #fac660;
+  color: #333;
+}
+.wrapper .row header nav ul li a:hover {
+  background-color: #bafd6d;
+}
+.wrapper .row header nav ul li a::before {
+  content: " + ";
+}
 
 /*# sourceMappingURL=style.css.map */
