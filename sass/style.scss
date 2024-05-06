@@ -51,24 +51,25 @@ $device-w : 400;
         font-size: 16px;
         line-height: 24px;
     }
+
 }
 
-$themeLayout : 1200;
 
-.wrapper {
+@mixin layout($themeLayout){
     @if $themeLayout ==100 {
         width: 100%;
     }
-
     @else if $themeLayout < 100 {
         width: $themeLayout * 1%;
         margin: 0 auto;
     }
-
     @else {
         width: $themeLayout + px;
         margin: 0 auto;
     }
+}
+.wrapper {
+  @include layout(70);
 }
 
 
@@ -87,13 +88,13 @@ $themeLayout : 1200;
 $alink : #00aaff;
 
 
-a {
-    background-color: $alink;
+// a {
+//     background-color: $alink;
 
-    &:hover {
-        background-color: darken($alink , 10);
-    }
-}
+//     &:hover {
+//         background-color: darken($alink , 10);
+//     }
+// }
 
 //  function name
 

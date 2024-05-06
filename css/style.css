@@ -86,7 +86,7 @@ footer {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -96,13 +96,6 @@ footer {
 
 .c {
   background-color: white;
-}
-
-a {
-  background-color: #00aaff;
-}
-a:hover {
-  background-color: #0088cc;
 }
 
 .title {
