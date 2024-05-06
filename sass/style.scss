@@ -97,7 +97,7 @@ a {
 
 //  function name
 
-@mixin basetitle($fontSize , $color) {
+@mixin basetitle($fontSize: 18px , $color:null) {
     font-size: $fontSize;
     line-height: 1.4;
     font-weight: bold;
@@ -105,7 +105,7 @@ a {
 }
 
 .title {
-    @include basetitle(24px , #333);
+    @include basetitle(24px , #bafd6d);
    
 }
 
