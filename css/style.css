@@ -119,4 +119,40 @@ h3 {
   color: #cccccc;
 }
 
+.btn-sm {
+  width: 140px;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #0011ff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-default {
+  width: 180px;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-xl {
+  width: 240px;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

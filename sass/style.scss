@@ -60,7 +60,7 @@ $device-w : 400;
 
 
 .wrapper {
-  @include layout(70);
+    @include layout(70);
 }
 
 
@@ -77,14 +77,44 @@ $device-w : 400;
 }
 
 .title {
-    @include basetitle(24px , #bafd6d);
-   
+    @include basetitle(24px, #bafd6d);
+
 }
 
 p {
-  @include basetitle(18px , #de2);
+    @include basetitle(18px, #de2);
 }
 
 h3 {
- @include basetitle(52px , #cccccc);
+    @include basetitle(52px, #cccccc);
+}
+
+
+
+@mixin btn($w , $color , $bgc:null){
+    width: $w;
+    color: $color;
+    font-size: 16px;
+    @if $bgc == null{
+        border: 1px solid $color; 
+    }
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $bgc;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn-sm {
+  @include btn( 140px,  #fff , #0011ff )
+}
+
+.btn-default {
+    @include btn( 180px, #333)
+  }
+
+.btn-xl {
+    @include btn(240px, #333)
+
+
 }
