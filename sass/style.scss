@@ -7,35 +7,46 @@
 @import 'layout/footer';
 
 //page
-@import 'page/index';//首頁
-@import 'page/about';//關於我們
+@import 'page/index'; //首頁
+@import 'page/about'; //關於我們
 
 
 
 //運算  單位要注意 // 除式要()
 
 .w {
-  width: 10 + 20em;
-  height: 20px - 300 ;
-  margin:  10 * 10 + px; //單位
-  font: (100 / 20) + px ;
+    width: 10 + 20em;
+    height: 20px - 300;
+    margin: 10 * 10 + px; //單位
+    font: (100 / 20) + px;
 }
 
 $bgc : blue;
 
 .bgcolor {
-  @if $bgc == light {
-    background-color: #fff;
-  }@else if $bgc == dark {
-    background-color:#000;
-  }@else {
-     background-color: $bgc;
-  }
+    @if $bgc ==light {
+        background-color: #fff;
+    }
+
+    @else if $bgc ==dark {
+        background-color: #000;
+    }
+
+    @else {
+        background-color: $bgc;
+    }
 }
 
+$device-w : 719;
 
+.textP {
+    @if $device-w >=1200 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @else if $device-w < 720 {
+        font-size: 20px;
+        line-height: 30px;
+    }
 
-
-
-
-
+}
